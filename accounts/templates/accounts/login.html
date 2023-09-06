@@ -21,7 +21,10 @@
       </form>
       {% else %}
       <p>
-        Você fez login com {{user}},
+        Você fez login com {{user}}.
+        <br>
+        <a href="{% url 'cadastro' %}">clique aqui</a> para cadastrar outro usuário.
+        <br>
         <a href="{% url 'logout' %}">clique aqui</a> para sair.
       </p>
 
